@@ -1,0 +1,49 @@
+import turtle
+
+# Set up the turtle
+turtle.speed(0)
+turtle.penup()
+turtle.setposition(0, -200)
+turtle.pendown()
+
+# Draw the coffee cup
+turtle.fillcolor("#a0522d")
+turtle.begin_fill()
+turtle.circle(100)
+turtle.left(90)
+turtle.forward(200)
+turtle.left(90)
+turtle.circle(100, 180)
+turtle.left(90)
+turtle.forward(200)
+turtle.end_fill()
+
+# Draw the coffee
+turtle.fillcolor("#8b4513")
+turtle.begin_fill()
+turtle.circle(80)
+turtle.end_fill()
+
+# Draw the steam
+turtle.penup()
+turtle.setposition(0, 120)
+turtle.pendown()
+turtle.pencolor("white")
+turtle.circle(40, 180)
+
+# Draw the handle
+turtle.penup()
+turtle.setposition(-60, -60)
+turtle.pendown()
+turtle.pencolor("#a0522d")
+turtle.pensize(10)
+turtle.left(60)
+turtle.forward(80)
+turtle.right(120)
+turtle.forward(80)
+
+# Hide the turtle
+turtle.hideturtle()
+
+# Wait for user to close the window
+turtle.done()
